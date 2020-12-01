@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <table class=tabla>
+        <tr>
+            <th>Puntuacion</th>
+        </tr>
+        <tr>
+            <td id="score">
+
+            </td>
+        </tr>
+    </table>
+
+    <div class="boton">
+        <p>
+            <input type="image" src="./images/Repeat.png" width="40" height="40" onclick="location.reload()" />
+        </p>
+    </div>
+
+    <br>
+
+    <div id="menu" class="menu">
+
+        <div class="menu_container">
+
+            <h1 class="titulo_menu">Menu</h1>
+
+            <button class="boton_menu" onclick="hideMenu()">Jugar</button>
+            <button class="boton_menu" onclick="showInstructions()">Instrucciones</button>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script src="scripts/libraries/functional-light.js"></script>
+    <script src="scripts/libraries/processing.js"></script>
+    <script src="scripts/libraries/fl-extended.js"></script>
+
+    <script src="scripts/map.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+
+</html>
